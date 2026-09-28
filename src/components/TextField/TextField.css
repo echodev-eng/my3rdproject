@@ -1,0 +1,51 @@
+/* React Aria sets data-* attributes for each interaction state. */
+.text-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-align: left;
+}
+
+.text-field-label {
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+}
+
+.text-field-input {
+  width: 100%;
+  padding: 12px 14px;
+  font-family: inherit;
+  font-size: var(--font-size-md);
+  color: inherit;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  outline: none;
+}
+
+.text-field-input[data-focused] {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px var(--color-focus-ring);
+}
+
+.text-field-input[data-invalid] {
+  border-color: var(--color-danger);
+}
+
+.text-field-input[data-invalid][data-focused] {
+  box-shadow: 0 0 0 3px var(--color-danger-ring);
+}
+
+.text-field-input[data-disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.text-field-input[readonly] {
+  background: transparent;
+}
+
+.text-field-error {
+  font-size: var(--font-size-sm);
+  color: var(--color-danger);
+}

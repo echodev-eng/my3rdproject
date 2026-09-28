@@ -1,0 +1,15 @@
+@import './styles/tokens.css';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background: linear-gradient(135deg, #eef2ff 0%, #f8fafc 100%);
+  min-height: 100vh;
+  color: var(--color-text);
+}

@@ -1,0 +1,31 @@
+/* React Aria sets data-* attributes for each interaction state. */
+.button {
+  padding: 12px 20px;
+  font-family: inherit;
+  font-size: var(--font-size-md);
+  font-weight: 600;
+  color: #fff;
+  background: var(--color-primary);
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  outline: none;
+}
+
+.button[data-hovered] {
+  background: var(--color-primary-hover);
+}
+
+.button[data-pressed] {
+  background: var(--color-primary-pressed);
+}
+
+/* Only shown for keyboard focus, not mouse clicks. */
+.button[data-focus-visible] {
+  box-shadow: 0 0 0 3px var(--color-focus-ring);
+}
+
+.button[data-disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
